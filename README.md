@@ -7,7 +7,19 @@
 # 1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h2>
 
 
-[Shida Gao](https://github.com/gaostar123), [Feng Xue](https://scholar.google.com/citations?user=66SeiQsAAAAJ)\*, [Xiangfeng Wang](https://github.com/sweetsora233)\*, [Anlong Ming](https://scholar.google.com/citations?user=y5kFLCwAAAAJ&hl=en), [Teng Long](https://scholar.google.com/citations?user=5Iv3ul0AAAAJ&hl=en), [Yihua Shao](https://scholar.google.cz/citations?user=lH6YmOUAAAAJ&hl=zh-CN), [Haozhe Wang](https://scholar.google.com/citations?hl=zh-CN&user=V96YGIMAAAAJ), [Zhaowen Lin](https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm), [Wei Wang](https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFIFp8Qre3JwwAAAZrx02d4KQguZTBtrJhFt03M85mSxLu5O0g15lpMNPQ-0kYdcuVhLBwDxGCJq06cFl-rfrAaStunjatHaYbOdO-PppYbom7iGnsK4-4xhaoE5k_TEdp7ioo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E4%25BC%259F-%25E7%258E%258B-ba9945376%3Ftrk%3Dcontact-info), [Nicu Sebe](https://scholar.google.it/citations?user=stFCYOAAAAAJ&hl=en)
+[Shida Gao](https://github.com/gaostar123), 
+[Feng Xue](https://scholar.google.com/citations?user=66SeiQsAAAAJ)\*, 
+[Xiangfeng Wang](https://github.com/sweetsora233)\*, 
+[Anlong Ming](https://scholar.google.com/citations?user=y5kFLCwAAAAJ&hl=en)<sup>✉</sup>, 
+[Teng Long](https://scholar.google.com/citations?user=5Iv3ul0AAAAJ&hl=en), 
+[Yihua Shao](https://scholar.google.cz/citations?user=lH6YmOUAAAAJ&hl=zh-CN), 
+[Haozhe Wang](https://scholar.google.com/citations?hl=zh-CN&user=V96YGIMAAAAJ), 
+[Zhaowen Lin](https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm), 
+[Wei Wang](https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFIFp8Qre3JwwAAAZrx02d4KQguZTBtrJhFt03M85mSxLu5O0g15lpMNPQ-0kYdcuVhLBwDxGCJq06cFl-rfrAaStunjatHaYbOdO-PppYbom7iGnsK4-4xhaoE5k_TEdp7ioo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E4%25BC%259F-%25E7%258E%258B-ba9945376%3Ftrk%3Dcontact-info), 
+[Nicu Sebe](https://scholar.google.it/citations?user=stFCYOAAAAAJ&hl=en)
+
+\* Equal contribution. <sup>✉</sup> Corresponding author.
+
 
 <a href='#'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href=''><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>
