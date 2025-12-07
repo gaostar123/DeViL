@@ -70,3 +70,18 @@ Spatio-temporal grounding and reasoning aims to locate the temporal segment and 
 <p align="center">
 <img src="assets/video_conversation.png" style="width: ">
 </p>
+
+# Citation
+
+If you use our work or our implementation in this repo, or find them helpful, please consider giving a citation in the following format.
+
+```
+
+```
+
+# Acknowledgements
+
+We sincerely thank the following projects for their contributions to this work:
+
+- [VideoLLaMA3](https://github.com/DAMO-NLP-SG/VideoLLaMA3)
+- [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) 
