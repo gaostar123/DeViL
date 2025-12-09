@@ -78,7 +78,12 @@ Spatio-temporal grounding and reasoning aims to locate the temporal segment and 
 If you use our work or our implementation in this repo, or find them helpful, please consider giving a citation in the following format.
 
 ```
-
+@article{gao2025devil,
+  title   = {1 + 1 > 2: Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning},
+  author  = {Gao, Shida and Xue, Feng and Wang, Xiangfeng and Ming, Anlong and Long, Teng and Shao, Yihua and Wang, Haozhe and Lin, Zhaowen and Wang, Wei and Sebe, Nicu},
+  journal = {arXiv preprint arXiv:2512.06673},
+  year    = {2025}
+}
 
 ```
 
