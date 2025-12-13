@@ -1,28 +1,27 @@
-# DeViL
+<div align="center" style="display:flex; align-items:center; justify-content:center; gap:16px;">
+  <img src="assets/logo.png" alt="DeViL logo" width="85">
+  <div align="left">
+    <h1 style="margin:0;">DeViL</h1>
+    <h2 style="margin:4px 0 0;">1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h2>
+  </div>
+</div>
+
+<div align="center">
+
+[**Shida Gao**](https://github.com/gaostar123) · [**Feng Xue**](https://scholar.google.com/citations?user=66SeiQsAAAAJ)<sup>*</sup> · [**Xiangfeng Wang**](https://github.com/sweetsora233)<sup>*</sup> · [**Anlong Ming**](https://scholar.google.com/citations?user=y5kFLCwAAAAJ&hl=en)<sup>✉</sup><br>
+[**Teng Long**](https://scholar.google.com/citations?user=5Iv3ul0AAAAJ&hl=en) · [**Yihua Shao**](https://scholar.google.cz/citations?user=lH6YmOUAAAAJ&hl=zh-CN) · [**Haozhe Wang**](https://scholar.google.com/citations?hl=zh-CN&user=V96YGIMAAAAJ) · [**Zhaowen Lin**](https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm) · [**Wei Wang**](https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFIFp8Qre3JwwAAAZrx02d4KQguZTBtrJhFt03M85mSxLu5O0g15lpMNPQ-0kYdcuVhLBwDxGCJq06cFl-rfrAaStunjatHaYbOdO-PppYbom7iGnsK4-4xhaoE5k_TEdp7ioo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E4%25BC%259F-%25E7%258E%258B-ba9945376%3Ftrk%3Dcontact-info) · [**Nicu Sebe**](https://scholar.google.it/citations?user=stFCYOAAAAAJ&hl=en)
+
+<sup>*</sup>Equal contribution. <sup>✉</sup>Corresponding author.
+
+<a href='#'><img src='https://img.shields.io/badge/Project-Page-Green' alt='Project Page'></a>
+<a href='http://arxiv.org/abs/2512.06673'><img src='https://img.shields.io/badge/Paper-PDF-orange' alt='Paper PDF'></a>
+</div>
+<p align="center"><i>This work presents DeViL, a detector-empowered MLLM that mitigates error accumulation and exposure bias seen in previous methods. Compared with previous methods, it delivers faster inference, fewer parameters, and higher accuracy.</i></p>
+
 <p align="center">
-  <img src="assets/logo.png" width="180">
+<img src="assets/compare.png" style="width: ">
 </p>
 
-
-# 1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h2>
-
-
-[Shida Gao](https://github.com/gaostar123), 
-[Feng Xue](https://scholar.google.com/citations?user=66SeiQsAAAAJ)\*, 
-[Xiangfeng Wang](https://github.com/sweetsora233)\*, 
-[Anlong Ming](https://scholar.google.com/citations?user=y5kFLCwAAAAJ&hl=en)<sup>✉</sup>, 
-[Teng Long](https://scholar.google.com/citations?user=5Iv3ul0AAAAJ&hl=en), 
-[Yihua Shao](https://scholar.google.cz/citations?user=lH6YmOUAAAAJ&hl=zh-CN), 
-[Haozhe Wang](https://scholar.google.com/citations?hl=zh-CN&user=V96YGIMAAAAJ), 
-[Zhaowen Lin](https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm), 
-[Wei Wang](https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFIFp8Qre3JwwAAAZrx02d4KQguZTBtrJhFt03M85mSxLu5O0g15lpMNPQ-0kYdcuVhLBwDxGCJq06cFl-rfrAaStunjatHaYbOdO-PppYbom7iGnsK4-4xhaoE5k_TEdp7ioo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E4%25BC%259F-%25E7%258E%258B-ba9945376%3Ftrk%3Dcontact-info), 
-[Nicu Sebe](https://scholar.google.it/citations?user=stFCYOAAAAAJ&hl=en)
-
-\* Equal contribution. <sup>✉</sup> Corresponding author.
-
-
-<a href='#'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-<a href='http://arxiv.org/abs/2512.06673'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>
 
 ## 📰 News
 
@@ -35,54 +34,17 @@ Spatio-temporal grounding and reasoning aims to locate the temporal segment and 
 ## 🔎 Framework
 ![model](assets/pipline.png)
 
-### Visualization
-
-#### Compare with other methods
-<p align="center">
-<img src="assets/compare.png" style="width: ">
-</p>
-
-#### Spatial Temporal Video Grounding (STVG)
-<p align="center">
-<img src="assets/stvg.png" style="width: ">
-</p>
-
-#### Spatial Video Grounding (SVG)
-<p align="center">
-<img src="assets/svg.png" style="width: ">
-</p>
-
-#### Temporal Video Grounding (TVG)
-
-<p align="center">
-<img src="assets/tvg.png" style="width: ">
-</p>
-
-####  Referring Expression Comprehension (REC)
-<p align="center">
-<img src="assets/rec.png" style="width: ">
-</p>
-
-####  Grounded Visual Question Answering (GQA)
-<p align="center">
-<img src="assets/gvqa.png" style="width: ">
-</p>
-
-####  Video Conversation
-<p align="center">
-<img src="assets/video_conversation.png" style="width: ">
-</p>
 
 # Citation
 
 If you use our work or our implementation in this repo, or find them helpful, please consider giving a citation in the following format.
 
 ```
-@article{gao2025devil,
-  title   = {1 + 1 > 2: Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning},
-  author  = {Gao, Shida and Xue, Feng and Wang, Xiangfeng and Ming, Anlong and Long, Teng and Shao, Yihua and Wang, Haozhe and Lin, Zhaowen and Wang, Wei and Sebe, Nicu},
-  journal = {arXiv preprint arXiv:2512.06673},
-  year    = {2025}
+@article{gao20251+,
+  title={1+ 1> 2: Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning},
+  author={Gao, Shida and Xue, Feng and Wang, Xiangfeng and Ming, Anlong and Long, Teng and Shao, Yihua and Wang, Haozhe and Lin, Zhaowen and Wang, Wei and Sebe, Nicu},
+  journal={arXiv preprint arXiv:2512.06673},
+  year={2025}
 }
 
 ```
