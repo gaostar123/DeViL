@@ -1,9 +1,6 @@
 <div align="center" style="display:flex; align-items:center; justify-content:center; gap:16px;">
-  <img src="assets/logo.png" alt="DeViL logo" width="85">
-  <div align="left">
-    <h1 style="margin:0;">DeViL</h1>
-    <h2 style="margin:4px 0 0;">1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h2>
-  </div>
+
+  <h1 style="margin:0;">1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h1>
 </div>
 
 <div align="center">
@@ -25,7 +22,7 @@
 
 ## 📰 News
 
-- 2025-12-09 Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
+- <strong>2025-12-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
 
 
 ## 📝 Abstract
