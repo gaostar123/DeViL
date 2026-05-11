@@ -1,23 +1,23 @@
-<div align="center" style="display:flex; align-items:center; justify-content:center; gap:16px;">
-
-  <h1 style="margin:0;">1+1 > 2 : Detector-Empowered Video Large Language Model for Spatio-Temporal Grounding and Reasoning</h1>
-</div>
-
 <div align="center">
 
-[**Shida Gao**](https://github.com/gaostar123) · [**Feng Xue**](https://scholar.google.com/citations?user=66SeiQsAAAAJ)<sup>*</sup> · [**Xiangfeng Wang**](https://github.com/sweetsora233)<sup>*</sup> · [**Anlong Ming**](https://scholar.google.com/citations?user=y5kFLCwAAAAJ&hl=en)<sup>✉</sup><br>
-[**Teng Long**](https://scholar.google.com/citations?user=5Iv3ul0AAAAJ&hl=en) · [**Yihua Shao**](https://scholar.google.cz/citations?user=lH6YmOUAAAAJ&hl=zh-CN) · [**Haozhe Wang**](https://scholar.google.com/citations?hl=zh-CN&user=V96YGIMAAAAJ) · [**Zhaowen Lin**](https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm) · [**Wei Wang**](https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFIFp8Qre3JwwAAAZrx02d4KQguZTBtrJhFt03M85mSxLu5O0g15lpMNPQ-0kYdcuVhLBwDxGCJq06cFl-rfrAaStunjatHaYbOdO-PppYbom7iGnsK4-4xhaoE5k_TEdp7ioo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E4%25BC%259F-%25E7%258E%258B-ba9945376%3Ftrk%3Dcontact-info) · [**Nicu Sebe**](https://scholar.google.it/citations?user=stFCYOAAAAAJ&hl=en)
+# Detector-Empowered Video Large Language Model for Efficient Spatio-Temporal Grounding
 
-<sup>*</sup>Equal contribution. <sup>✉</sup>Corresponding author.
+**Shida Gao** · **Feng Xue** · **Xiangfeng Wang** · **Anlong Ming** · **Zhaowen Lin**<br>
+**Haiyang Zhang** · **Teng Long** · **Nicu Sebe** · **Yihua Shao** · **Haozhe Wang** · **Wei Wang**
 
-<a href='#'><img src='https://img.shields.io/badge/Project-Page-Green' alt='Project Page'></a>
+<a href='https://github.com/gaostar123/DeViL'><img src='https://img.shields.io/badge/Code-GitHub-black' alt='Code'></a>
 <a href='http://arxiv.org/abs/2512.06673'><img src='https://img.shields.io/badge/Paper-PDF-orange' alt='Paper PDF'></a>
 </div>
-<p align="center"><i>This work presents DeViL, a detector-empowered MLLM that mitigates error accumulation and exposure bias seen in previous methods. Compared with previous methods, it delivers faster inference, fewer parameters, and higher accuracy.</i></p>
+
+<p align="center"><i>DEViL offloads dense spatial grounding from the MLLM to a fully-parallelizable detector, achieving strong STVG performance with superior efficiency while preserving the backbone's general reasoning capacity.</i></p>
 
 <p align="center">
-<img src="assets/compare.png" style="width: ">
+  <a href="assets/intro_v10.pdf">
+    <img src="assets/intro_v10.png" alt="DEViL teaser" width="100%">
+  </a>
 </p>
+
+<p align="center"><i>Click the figure to open the original PDF.</i></p>
 
 
 ## 📰 News
@@ -26,10 +26,16 @@
 
 
 ## 📝 Abstract
-Spatio-temporal grounding and reasoning aims to locate the temporal segment and spatial region of an event in a video given a user query, while also reasoning about semantics such as causality, temporal order, and action relationships. To achieve this, current MLLMs primarily treats bounding boxes as text tokens and generates them autoregressively. However, such autoregressive spatial decoding leads to very-long output sequences, causing spatial errors to accumulated over time and the localization results to progressively drift across a video. To address this, we present a Detector-Empowered Video LLM, short for <strong>DEViL</strong>, which couples a Video LLM with an open-vocabulary detector (OVD). Specifically, the MLLM and detector are connected via a reference-semantic token (RST) that distills the user query into a rich semantic representation. Unlike tokens that merely serve as spatial prompts or segmentor switches, the RST functions as both a control signal and a replacement for the OVD's text embedding, enabling end-to-end learning of both referential understanding and spatial localization. Furthermore, we propose a tube-mined temporal regularization (TTReg) within OVD, which drives the OVD to generate temporally-consistent queries for target objects, thereby ensuring effective temporal association. Experiments demonstrate that DEViL achieves strong performance across various fine-grained video understanding tasks, particularly STVG and GroundedVQA.
+Multimodal large language models (MLLMs) are rapidly expanding from general video understanding to finer-grained understanding such as spatio-temporal video grounding (STVG) and reasoning. In these tasks, an MLLM must localize the user-queried target in time and space and take the results as evidence for reasoning. Existing MLLM methods mainly follow two paradigms: (1) Direct Localization, which outputs STVG results with extra alignment modules or specialized decoders; and (2) Candidate-based Selection, which first constructs tube-level candidates and then selects the relevant one with an MLLM. However, both suffer from a <i>serious efficiency bottleneck</i>: the former incurs linearly growing decoding cost as the queried temporal span increases, while the latter relies on costly candidate construction. To break this bottleneck, we propose <strong>DEViL</strong>, a detector-empowered Video-LLM with a simple key idea: <i>offloading dense spatial grounding from the MLLM to a fully-parallelizable, well-trained detector</i>. Specifically, DEViL distills the query into a detector-compatible reference-semantic token, which replaces the detector's text embedding to enable spatial grounding in a single pass. Then, we design temporal consistency regularization to match objects across frames and enforce their coherence over time. In this way, DEViL avoids long coordinate decoding and heavy candidate pipelines. Extensive experiments show that DEViL achieves strong performance (43.1% m_vIoU on HC-STVG) with superior efficiency (14.33 FPS), while preserving the general reasoning capacity of the MLLM backbone.
 
 ## 🔎 Framework
-![model](assets/pipline.png)
+<p align="center">
+  <a href="assets/method_v7.pdf">
+    <img src="assets/method_v7.png" alt="DEViL framework" width="100%">
+  </a>
+</p>
+
+<p align="center"><i>Click the figure to open the original PDF.</i></p>
 
 
 # Citation
@@ -43,7 +49,6 @@ If you use our work or our implementation in this repo, or find them helpful, pl
   journal={arXiv preprint arXiv:2512.06673},
   year={2025}
 }
-
 ```
 
 # Acknowledgements
