@@ -12,12 +12,8 @@
 <p align="center"><i>DEViL offloads dense spatial grounding from the MLLM to a fully-parallelizable detector, achieving strong STVG performance with superior efficiency while preserving the backbone's general reasoning capacity.</i></p>
 
 <p align="center">
-  <a href="assets/intro_v10.pdf">
-    <img src="assets/intro_v10.png" alt="DEViL teaser" width="100%">
-  </a>
+  <img src="assets/intro_v10.png" alt="DEViL teaser" width="100%">
 </p>
-
-<p align="center"><i>Click the figure to open the original PDF.</i></p>
 
 
 ## 📰 News
@@ -30,12 +26,8 @@ Multimodal large language models (MLLMs) are rapidly expanding from general vide
 
 ## 🔎 Framework
 <p align="center">
-  <a href="assets/method_v7.pdf">
-    <img src="assets/method_v7.png" alt="DEViL framework" width="100%">
-  </a>
+  <img src="assets/method_v7.png" alt="DEViL framework" width="100%">
 </p>
-
-<p align="center"><i>Click the figure to open the original PDF.</i></p>
 
 
 # Citation
