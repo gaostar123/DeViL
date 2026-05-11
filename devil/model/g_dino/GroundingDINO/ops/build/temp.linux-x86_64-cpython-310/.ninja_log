@@ -1,0 +1,4 @@
+# ninja log v5
+1	3202	1755676627347942122	/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/build/temp.linux-x86_64-cpython-310/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/src/cpu/ms_deform_attn_cpu.o	d32ecf9eaa52bab1
+1	9512	1755676633656241388	/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/build/temp.linux-x86_64-cpython-310/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/src/vision.o	ccf9f66d9d8ee576
+1	9965	1755676634096262186	/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/build/temp.linux-x86_64-cpython-310/home/gaoshida/STVG/VideoLLaMA3/videollama3/model/g_dino/GroundingDINO/ops/src/cuda/ms_deform_attn_cuda.o	3028341a7dd6a314
