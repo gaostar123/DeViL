@@ -15,6 +15,7 @@
 
 ## 📰 News
 
+- <strong>2026-05-11</strong> Training and evaluation code is now available in this repository.
 - <strong>2025-12-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
 
 
@@ -25,6 +26,28 @@ Multimodal large language models (MLLMs) are rapidly expanding from general vide
 <p align="center">
   <img src="assets/method_v7.png" alt="DEViL framework" width="100%">
 </p>
+
+## 🛠️ Requirements and Installation
+
+Please download the following checkpoints before training or evaluation, and place them under `weights/` with the following layout:
+
+- [GroundingDINO Swin-B checkpoint](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth) -> `weights/pretrained/groundingdino_swinb_cogcoor.pth`
+- [VideoLLaMA3-7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-7B) -> `weights/videollama3_7b_local/`
+- [VL3-SigLIP-NaViT](https://huggingface.co/DAMO-NLP-SG/VL3-SigLIP-NaViT) -> `weights/VL3-SigLIP-NaViT/`
+
+```bash
+cd DeViL
+pip install torch==2.4.0 torchvision==0.19.0 --extra-index-url https://download.pytorch.org/whl/cu118
+pip install transformers==4.46.3 accelerate==1.0.1
+pip install decord ffmpeg-python imageio opencv-python
+pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
+
+cd devil/model/g_dino/GroundingDINO/ops
+python setup.py build install
+python test.py
+cd ../../../../..
+```
 
 
 # Citation

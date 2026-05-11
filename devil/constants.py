@@ -5,7 +5,7 @@ LOGDIR = "."
 
 # Model Constants
 IGNORE_INDEX = -100
-DEFAULT_G_DINO_CONFIG_PATH = "weights/mevis_swinb.yaml"
+DEFAULT_G_DINO_CONFIG_PATH = "weights/gdino_swinb.yaml"
 
 # Image arguments
 IMAGE_TOKEN_INDEX = -200

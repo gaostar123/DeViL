@@ -7,6 +7,7 @@ from transformers import AutoTokenizer
 from peft import PeftModel
 
 sys.path.append("./")
+from devil.constants import DEFAULT_G_DINO_CONFIG_PATH
 from devil.model import DeViLQwen2ForCausalLM, DeViLQwen2Config
 
 
@@ -26,6 +27,7 @@ def merge_lora_to_base_model(base_model_path, lora_checkpoint_path, output_path)
     config = DeViLQwen2Config.from_pretrained(base_model_path)
     if not hasattr(config, "use_gdino"):
         setattr(config, "use_gdino", True)
+    config.g_dino_config_path = getattr(config, "g_dino_config_path", DEFAULT_G_DINO_CONFIG_PATH) or DEFAULT_G_DINO_CONFIG_PATH
 
     print("[STEP 3] Loading base model...")
     base_model = DeViLQwen2ForCausalLM.from_pretrained(
