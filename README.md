@@ -49,6 +49,24 @@ python test.py
 cd ../../../../..
 ```
 
+## 🚀 Training and Evaluation
+
+DEViL uses a three-stage training pipeline. Run the following scripts sequentially:
+
+```bash
+# example: 1 node with 8 GPUs
+bash scripts/train/stage1.sh 1 8
+bash scripts/train/stage2.sh 1 8
+bash scripts/train/stage3.sh 1 8
+```
+
+For evaluation, run:
+
+```bash
+# example: evaluate selected benchmarks with 8 GPUs
+bash scripts/eval/eval_video.sh weights/DeViL_stage3 "vidstg,hc_stvg_v1,hc_stvg_v2" 1 8
+```
+
 
 # Citation
 
