@@ -4,6 +4,7 @@
 
 <a href='https://github.com/gaostar123/DeViL'><img src='https://img.shields.io/badge/Code-GitHub-black' alt='Code'></a>
 <a href='http://arxiv.org/abs/2512.06673'><img src='https://img.shields.io/badge/Paper-PDF-orange' alt='Paper PDF'></a>
+<a href='https://huggingface.co/gaostar/DeViL-7B'><img src='https://img.shields.io/badge/Model-HuggingFace-yellow' alt='Model'></a>
 </div>
 
 <p align="center"><i>DEViL offloads dense spatial grounding from the MLLM to a fully-parallelizable detector, achieving strong STVG performance with superior efficiency while preserving the backbone's general reasoning capacity.</i></p>
@@ -15,6 +16,7 @@
 
 ## 📰 News
 
+- <strong>2026-05-12</strong> We have open-sourced our model [DeViL-7B](https://huggingface.co/gaostar/DeViL-7B). 🔥🔥🔥
 - <strong>2026-05-11</strong> Training and evaluation code is now available in this repository. 🔥🔥
 - <strong>2026-05-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
 
