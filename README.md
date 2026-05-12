@@ -15,7 +15,7 @@
 
 ## 📰 News
 
-- <strong>2026-05-11</strong> Training and evaluation code is now available in this repository.
+- <strong>2026-05-11</strong> Training and evaluation code is now available in this repository. 🔥🔥
 - <strong>2026-05-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
 
 
@@ -43,10 +43,8 @@ pip install decord ffmpeg-python imageio opencv-python
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 
-cd devil/model/g_dino/GroundingDINO/ops
-python setup.py build install
-python test.py
-cd ../../../../..
+python devil/model/g_dino/GroundingDINO/ops/setup.py build install
+python devil/model/g_dino/GroundingDINO/ops/test.py
 ```
 
 ## 🚀 Training and Evaluation
