@@ -16,7 +16,7 @@
 ## 📰 News
 
 - <strong>2026-05-11</strong> Training and evaluation code is now available in this repository.
-- <strong>2025-12-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
+- <strong>2026-05-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
 
 
 ## 📝 Abstract
@@ -66,6 +66,10 @@ For evaluation, run:
 # example: evaluate selected benchmarks with 8 GPUs
 bash scripts/eval/eval_video.sh weights/DeViL_stage3 "vidstg,hc_stvg_v1,hc_stvg_v2" 1 8
 ```
+
+## 🎬 Demo
+
+To run DEViL on your own video, use [demo/demo.sh](demo/demo.sh) as a reference and update `--media_path` and `--query` for your input.
 
 
 # Citation
