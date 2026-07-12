@@ -16,6 +16,7 @@
 
 ## 📰 News
 
+- <strong>2026-07-12</strong> Congratulations! Our work has been accepted by ACM MM 2026. 🎉🎉🎉
 - <strong>2026-05-12</strong> We have open-sourced our model [DeViL-7B](https://huggingface.co/gaostar/DeViL-7B). 🔥🔥🔥
 - <strong>2026-05-11</strong> Training and evaluation code is now available in this repository. 🔥🔥
 - <strong>2026-05-09</strong>  Our paper is now publicly available on [arXiv](http://arxiv.org/abs/2512.06673).
