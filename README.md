@@ -2,6 +2,8 @@
 
 # Detector-Empowered Video Large Language Model for Efficient Spatio-Temporal Grounding
 
+### ACM MM 2026
+
 <a href='https://github.com/gaostar123/DeViL'><img src='https://img.shields.io/badge/Code-GitHub-black' alt='Code'></a>
 <a href='http://arxiv.org/abs/2512.06673'><img src='https://img.shields.io/badge/Paper-PDF-orange' alt='Paper PDF'></a>
 <a href='https://huggingface.co/gaostar/DeViL-7B'><img src='https://img.shields.io/badge/Model-HuggingFace-yellow' alt='Model'></a>
